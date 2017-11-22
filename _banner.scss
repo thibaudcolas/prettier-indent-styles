@@ -1,0 +1,65 @@
+.banner {
+  position: relative;
+  padding-top: 0;
+  margin-left: -$gutters-small;
+  margin-right: -$gutters-small;
+
+  @include medium {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+  .banner__attribute {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0.25rem 0.5rem;
+    color: $color-white;
+    font-size: rem(12);
+
+    @include up-to-medium {
+      top: 0;
+      bottom: auto;
+    }
+  }
+
+  .banner__caption {
+    padding: 0.75em 1em;
+    position: relative;
+    margin-top: -2.25rem;
+    max-width: 100%;
+    background: #222;
+    color: #fff;
+    @include small {
+      margin-top: -2.5rem;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    @include xlarge {
+      margin-left: 0;
+    }
+  }
+
+  .banner__content {
+    img {
+      display: block;
+      min-height: 100%;
+      min-width: 100%;
+      object-fit: cover;
+    }
+  }
+
+    .banner__content--short-height {
+      img {
+        display: block;
+        min-height: 100%;
+        min-width: 100%;
+        object-fit: cover;
+      }
+    }
