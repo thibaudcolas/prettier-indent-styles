@@ -1,0 +1,11 @@
+table {
+  background: papayawhip;
+}
+
+  table tr {
+    background: palegreen;
+  }
+
+    table tr.active {
+      background: lime;
+    }

@@ -1,0 +1,16 @@
+{
+    "name": "prettier-indent-styles",
+    "version": "1.0.0",
+    "private": true,
+    "description": "",
+    "main": "index.js",
+    "keywords": [],
+    "author": "",
+    "license": "MIT",
+    "devDependencies": {
+        "prettier": "git@github.com:springload/prettier.git#indent-styles"
+    },
+    "scripts": {
+        "test": "prettier --indent-styles --write *.css"
+    }
+}
