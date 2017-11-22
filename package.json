@@ -11,6 +11,6 @@
         "prettier": "git@github.com:springload/prettier.git#indent-styles"
     },
     "scripts": {
-        "test": "prettier --indent-styles --write *.css"
+        "test": "prettier --indent-styles --write *.css *.scss"
     }
 }
