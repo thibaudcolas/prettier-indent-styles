@@ -2,6 +2,10 @@ table {
   background: papayawhip;
 }
 
-  table tr.active {
-    background: lime;
+  table tr {
+    background: palegreen;
   }
+
+    table tr.active {
+      background: lime;
+    }
