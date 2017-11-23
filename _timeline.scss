@@ -1,0 +1,22 @@
+.timeline {
+  border-left: 3px solid #eee;
+}
+  .timeline__item {
+    padding-left: 2rem;
+
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: -9.5px;
+      width: 1rem;
+      height: 1rem;
+      border-radius: 100%;
+      background-color: #eee;
+    }
+  }
+
+  .timeline__title.timeline__title {
+    margin-top: 0;
+  }

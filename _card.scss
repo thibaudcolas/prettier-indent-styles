@@ -1,0 +1,100 @@
+.card-group {
+  margin-bottom: -$grid-row-spacing;
+  @include medium {
+    margin-bottom: -3rem;
+  }
+
+  > .card {
+    @include medium {
+      width: 33.333333333%;
+    }
+  }
+
+  .no-js h2 + & {
+    margin-top: 1.5rem;
+  }
+}
+
+  .card-group--1\/2 {
+    > .card {
+      @include smallish {
+        width: 50%;
+      }
+    }
+  }
+
+.card {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+}
+
+  .card__link {
+    width: 100%;
+    display: inherit;
+  }
+
+  .card__image {
+    img {
+      display: block;
+      height: 101%;
+      width: auto;
+      max-width: none;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      transition: opacity 0.3s;
+    }
+
+    .ratio__content {
+      background-color: $color-hr;
+      transition: opacity 0.4s $easing-circ;
+    }
+  }
+
+  .card__title {
+    color: $color-teal;
+    margin-bottom: 1rem;
+    // Makes the rag a bit nicer optically
+    max-width: 90%;
+    transition: all 0.4s $easing-circ;
+  }
+
+  .card__link:hover .card__title {
+    color: $color-links-hover;
+    text-decoration: underline;
+    text-decoration-color: $color-links-hover;
+    -webkit-text-decoration-color: $color-links-hover;
+
+    transition: all 0.4s $easing-circ;
+  }
+
+  .card__subtitle {
+    font-weight: $font-weight-normal;
+    margin-bottom: 0.5rem;
+    color: $color-light-grey;
+  }
+
+  .card__content {
+    text-align: left;
+    padding-top: 1.25rem;
+    > *:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .card__flag {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+.flag {
+  @include btn;
+  border-radius: 0;
+  background-color: $color-teal;
+  color: $color-white;
+  line-height: 1.75;
+  font-weight: 600;
+}
